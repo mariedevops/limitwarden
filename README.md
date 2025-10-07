@@ -15,12 +15,13 @@ keeping clusters stable, efficient, and safe.
 
 ## 🚀 Quick Install (One-Line)
 
+1. Install via script
+
 ```bash
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden.sh | bash
 
 
-## 🧵 Install via Helm
+2. 🧵 Install via Helm
 
-```bash
 helm repo add limitwarden https://mariedevops.github.io/limitwarden
 helm install limitwarden limitwarden/limitwarden
