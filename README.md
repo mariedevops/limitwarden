@@ -17,3 +17,15 @@ keeping clusters stable, efficient, and safe.
 
 ```bash
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden.sh | bash
+
+
+## 🧵 Install via Helm
+
+```bash
+helm repo add limitwarden https://mariedevops.github.io/limitwarden
+helm install limitwarden limitwarden/limitwarden
+
+
+### 2. **Add a Badge**
+```markdown
+![Helm Chart](https://img.shields.io/badge/Install%20with-Helm-blue?logo=helm)
