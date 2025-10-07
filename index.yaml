@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  limitwarden:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2025-10-07T10:38:17.03799+02:00"
+    description: Enforces resource limits on Kubernetes workloads
+    digest: 1920a2379a3b45ecc8a42e67c7898d178e507ad76639e2addf8212f38154d4a3
+    name: limitwarden
+    type: application
+    urls:
+    - https://mariedevops.github.io/limitwarden/limitwarden-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-10-07T10:38:17.037227+02:00"
