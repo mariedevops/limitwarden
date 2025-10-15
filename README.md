@@ -25,21 +25,24 @@ curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-l
 
 # Namespace-scoped install (for RBAC-restricted or testing environments)
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden-ns.sh | bash
+
 Or use Helm:
 
-
 helm repo add limitwarden https://mariedevops.github.io/limitwarden
+
 helm install limitwarden limitwarden/limitwarden
 
-🧵 For GitOps Projects (Manifest Patching)
+# 🧵 For GitOps Projects (Manifest Patching)
 
 Use LimitWarden as a CLI tool to patch manifests directly in your GitOps repo:
 
 pip3 install limitwarden
+
 limitwarden scan . --patch --dry-run
+
 limitwarden scan . --patch --write
 
-You can:
+# You can:
 
 ✅ Run it manually before committing
 
