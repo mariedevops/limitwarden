@@ -20,6 +20,10 @@ keeping clusters stable, efficient, and safe.
 ```bash
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden.sh | bash
 
+#in case with RBAC restrictions and for testing purposes use role instead of cluster role
+#it will limit the job to one specific namespace instead of cluster-wide option
+curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden-ns.sh | bash
+
 
 2. 🧵 Install via Helm
 
