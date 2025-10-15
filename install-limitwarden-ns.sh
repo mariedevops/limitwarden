@@ -3,7 +3,7 @@
 echo "🚀 Installing LimitWarden..."
 
 # Apply RBAC
-kubectl apply -f https://raw.githubusercontent.com/mariedevops/limitwarden/main/k8s/limitwarden-rbac.yaml
+kubectl apply -f https://raw.githubusercontent.com/mariedevops/limitwarden/main/k8s/limitwarden-rbac-ns.yaml
 
 # Apply CronJob
 kubectl apply -f https://raw.githubusercontent.com/mariedevops/limitwarden/main/k8s/limitwarden-cronjob.yaml
