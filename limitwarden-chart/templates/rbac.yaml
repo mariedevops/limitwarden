@@ -12,6 +12,15 @@ rules:
 - apiGroups: ["apps"]
   resources: ["deployments", "statefulsets"]
   verbs: ["get", "list", "patch"]
+- apiGroups: ["rabbitmq.com"]
+  resources: ["rabbitmqclusters"]
+  verbs: ["get", "list", "patch"]
+- apiGroups: ["batch"]
+  resources: ["jobs", "cronjobs"]  
+  verbs: ["get", "list", "patch"]
+- apiGroups: [""]
+  resources: ["pods"]
+  verbs: ["get", "list"]    
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
