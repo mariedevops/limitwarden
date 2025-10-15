@@ -19,7 +19,6 @@ Originally designed for non-GitOps environments, LimitWarden now supports GitOps
 🛠 For Non-GitOps Projects (Cluster CronJob)
 Install LimitWarden directly into your cluster to run as a scheduled CronJob:
 
-bash
 ## Cluster-wide install
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden.sh | bash
 
