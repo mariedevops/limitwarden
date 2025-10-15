@@ -1,5 +1,5 @@
 from config import DEFAULT_CPU_REQUEST, DEFAULT_MEMORY_REQUEST
-from utils import warn
+from utils.utils import warn
 
 def get_usage_for_container(workload):
     # Stub: Replace with Prometheus or Metrics Server integration

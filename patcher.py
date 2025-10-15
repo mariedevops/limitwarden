@@ -1,5 +1,5 @@
 from kubernetes import client
-from utils import log
+from utils.utils import log
 
 apps_v1 = client.AppsV1Api()
 

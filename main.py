@@ -6,7 +6,7 @@ from metrics import get_usage_for_container
 from heuristics import suggest_resources
 from patcher import patch_workload
 from manifest_patcher import scan_and_patch_manifests
-from utils import log
+from utils.utils import log
 
 def run_cluster_patch():
     log("🚀 Starting LimitWarden (cluster mode)...")
