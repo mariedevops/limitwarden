@@ -27,13 +27,14 @@ curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-l
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden-ns.sh | bash
 Or use Helm:
 
-bash
+
 helm repo add limitwarden https://mariedevops.github.io/limitwarden
 helm install limitwarden limitwarden/limitwarden
+
 🧵 For GitOps Projects (Manifest Patching)
+
 Use LimitWarden as a CLI tool to patch manifests directly in your GitOps repo:
 
-bash
 pip3 install limitwarden
 limitwarden scan . --patch --dry-run
 limitwarden scan . --patch --write
@@ -41,6 +42,9 @@ limitwarden scan . --patch --write
 You can:
 
 ✅ Run it manually before committing
+
 ✅ Add it to a pre-commit hook
+
 ✅ Integrate it into your CI/CD pipeline (e.g. GitHub Actions, Azure Pipelines)
+
 ✅ Enforce hygiene without touching the cluster
