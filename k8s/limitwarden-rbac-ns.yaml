@@ -5,7 +5,7 @@ metadata:
 
 ---
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole
+kind: Role
 metadata:
   name: limitwarden-role
 rules:
@@ -20,10 +20,10 @@ metadata:
   name: limitwarden-binding
   namespace: limitwarden
 roleRef:
-  kind: ClusterRole
+  kind: Role
   name: limitwarden-role
   apiGroup: rbac.authorization.k8s.io
 subjects:
 - kind: ServiceAccount
   name: limitwarden-sa
-  namespace: default
+  namespace: limitwarden
