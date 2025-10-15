@@ -20,10 +20,10 @@ Originally designed for non-GitOps environments, LimitWarden now supports GitOps
 Install LimitWarden directly into your cluster to run as a scheduled CronJob:
 
 bash
-# Cluster-wide install
+## Cluster-wide install
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden.sh | bash
 
-# Namespace-scoped install (for RBAC-restricted or testing environments)
+## Namespace-scoped install (for RBAC-restricted or testing environments)
 curl -s https://raw.githubusercontent.com/mariedevops/limitwarden/main/install-limitwarden-ns.sh | bash
 
 Or use Helm:
@@ -32,7 +32,7 @@ helm repo add limitwarden https://mariedevops.github.io/limitwarden
 
 helm install limitwarden limitwarden/limitwarden
 
-# 🧵 For GitOps Projects (Manifest Patching)
+## 🧵 For GitOps Projects (Manifest Patching)
 
 Use LimitWarden as a CLI tool to patch manifests directly in your GitOps repo:
 
@@ -42,7 +42,7 @@ limitwarden scan . --patch --dry-run
 
 limitwarden scan . --patch --write
 
-# You can:
+## You can:
 
 ✅ Run it manually before committing
 
